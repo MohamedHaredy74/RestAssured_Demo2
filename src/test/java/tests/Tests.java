@@ -45,7 +45,7 @@ public class Tests {
     @Test(priority = 1)
     public void createBooking()  {
 
-        String additionalNeeds=creatBookingData.additionalneeds();
+        String additionalNeeds=creatBookingData.getAdditionalneeds();
         InputStream createBookingJsonSchema=getClass().getClassLoader().getResourceAsStream("createBookingSchema.json");
         Response response=
                 EndPoints.createBooking(creatBookingData);
@@ -100,7 +100,7 @@ public class Tests {
     @Test(priority = 4)
     public void updateCreatedBooking()
     {
-        String firstname= creatBookingData.firstname();
+        String firstname= creatBookingData.getFirstname();
         Response response=
         EndPoints.updateBooking(bookingId, creatBookingData,Token);
         response.then()
@@ -115,8 +115,8 @@ public class Tests {
     @Test(priority = 5)
     public void updateAdditionalneedsAndtotalprice()
     {
-        String additionalNeeds=partialBookingData.additionalneeds();
-        int price= partialBookingData.totalprice();
+        String additionalNeeds=partialBookingData.getAdditionalneeds();
+        int price= partialBookingData.getTotalprice();
         Response response=
         EndPoints.updateBookingPartially(bookingId,partialBookingData,Token);
         response.prettyPrint();

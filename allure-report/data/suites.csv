@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Thu Nov 02 23:01:32 EET 2023","Thu Nov 02 23:01:32 EET 2023","55","Restful Booker Test Suite","Restful Booker tests","tests.Tests","tests.Tests","deleteBooking","deleteBooking","Test6 : Delete Created Booking "
+"passed","Thu Nov 02 23:01:32 EET 2023","Thu Nov 02 23:01:32 EET 2023","75","Restful Booker Test Suite","Restful Booker tests","tests.Tests","tests.Tests","updateAdditionalneedsAndtotalprice","updateAdditionalneedsAndtotalprice","Test5 : Update AdditionalNeeds and TotalPrice Properties Of Booking "
+"passed","Thu Nov 02 23:01:32 EET 2023","Thu Nov 02 23:01:32 EET 2023","60","Restful Booker Test Suite","Restful Booker tests","tests.Tests","tests.Tests","updateCreatedBooking","updateCreatedBooking","Test4 : Update Full Booking Data "
+"passed","Thu Nov 02 23:01:32 EET 2023","Thu Nov 02 23:01:32 EET 2023","41","Restful Booker Test Suite","Restful Booker tests","tests.Tests","tests.Tests","getBookingById","getBookingById","Test3 : Get Single Booking "
+"passed","Thu Nov 02 23:01:32 EET 2023","Thu Nov 02 23:01:32 EET 2023","413","Restful Booker Test Suite","Restful Booker tests","tests.Tests","tests.Tests","createBooking","createBooking","Test1 : Create  Booking"
+"passed","Thu Nov 02 23:01:32 EET 2023","Thu Nov 02 23:01:32 EET 2023","56","Restful Booker Test Suite","Restful Booker tests","tests.Tests","tests.Tests","getAllBookings","getAllBookings","Test2: Get All Created Bookings"

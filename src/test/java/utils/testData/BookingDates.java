@@ -1,5 +1,11 @@
 package utils.testData;
 
+import lombok.Builder;
+import lombok.Data;
 
-public record BookingDates(String checkin , String checkout) {
+@Data
+@Builder
+public class BookingDates {
+    String checkin;
+    String checkout;
 }

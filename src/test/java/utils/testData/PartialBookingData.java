@@ -1,5 +1,12 @@
 package utils.testData;
 
 
-public record PartialBookingData(String additionalneeds , int totalprice) {
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+@Builder
+public class PartialBookingData {
+    String additionalneeds ;
+    int totalprice;
 }

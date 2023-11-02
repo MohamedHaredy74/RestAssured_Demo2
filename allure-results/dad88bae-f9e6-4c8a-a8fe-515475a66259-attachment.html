@@ -1,0 +1,42 @@
+<div>PUT to http://localhost:3001/booking/13</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;firstname&quot;: &quot;Mitch&quot;,
+    &quot;lastname&quot;: &quot;O&#39;Keefe&quot;,
+    &quot;totalprice&quot;: 479,
+    &quot;depositpaid&quot;: true,
+    &quot;bookingdates&quot;: {
+        &quot;checkin&quot;: &quot;2023-11-01&quot;,
+        &quot;checkout&quot;: &quot;2023-11-05&quot;
+    },
+    &quot;additionalneeds&quot;: &quot;Dried Apricots&quot;
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Cookie: token=563f64aba47f057</div>
+        <div>Accept: application/json</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X PUT &#39;http://localhost:3001/booking/13&#39; -H &#39;Cookie: token=563f64aba47f057&#39; -H &#39;Accept: application/json&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;firstname&quot;: &quot;Mitch&quot;,
+    &quot;lastname&quot;: &quot;O&#39;Keefe&quot;,
+    &quot;totalprice&quot;: 479,
+    &quot;depositpaid&quot;: true,
+    &quot;bookingdates&quot;: {
+        &quot;checkin&quot;: &quot;2023-11-01&quot;,
+        &quot;checkout&quot;: &quot;2023-11-05&quot;
+    },
+    &quot;additionalneeds&quot;: &quot;Dried Apricots&quot;
+}&#39;
+</div>

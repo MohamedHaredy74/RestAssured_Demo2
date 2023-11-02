@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "required": ["firstname","lastname","totalprice","depositpaid","bookingdates","additionalneeds"],
+  "properties": {
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "totalprice": {
+      "type": "number",
+      "minimum": 30,
+      "maximum": 600
+    },
+    "depositpaid": {
+      "type": "boolean"
+    },
+    "additionalneeds": {
+      "type": "string"
+    }
+  }
+}

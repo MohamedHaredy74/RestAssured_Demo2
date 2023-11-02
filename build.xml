@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Restful Booker Test Suite" >
+    <test name="Restful Booker tests">
+        <classes>
+            <class name="tests.Tests">
+                <methods>
+                    <include name="getAllBookings"/>
+                    <include name="createBooking"/>
+                    <include name="getBookingById"/>
+                    <include name="updateCreatedBooking"/>
+                    <include name="updateAdditionalneedsAndtotalprice"/>
+                    <include name="deleteBooking"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite> <!-- Suite -->

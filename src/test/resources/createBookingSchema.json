@@ -1,0 +1,34 @@
+{
+"type": "object",
+  "required":["bookingid","booking"],
+  "properties":{
+    "bookingid": {
+      "type": "number",
+      "minimum": 1,
+      "maximum":200
+    },
+    "booking": {
+
+      "required": ["firstname","lastname","totalprice","depositpaid","bookingdates","additionalneeds"],
+      "properties": {
+        "firstname": {
+          "type": "string"
+        },
+        "lastname": {
+          "type": "string"
+        },
+        "totalprice": {
+          "type": "number",
+          "minimum": 30,
+          "maximum": 500
+        },
+        "depositpaid": {
+          "type": "boolean"
+        },
+        "additionalneeds": {
+          "type":"string"
+        }
+      }
+
+
+}}}

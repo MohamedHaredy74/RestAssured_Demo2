@@ -73,7 +73,8 @@ public class Tests {
         response.
                 then()
                 .assertThat().body("bookingis",not(empty())).
-                statusCode(200);
+                statusCode(200)
+                .log().all();
        // List<Object>bookingID= response.body().path("bookingid");
 
     }
@@ -86,7 +87,7 @@ public class Tests {
     {
         InputStream getBookingJsonSchema=getClass().getClassLoader().getResourceAsStream("getBookingSchema.json");
         Response response=
-                EndPoints.getBookingById(bookingId);
+                EndPoints.getBookingById(16);
         response.then()
                 .assertThat()
                 .body(JsonSchemaValidator.matchesJsonSchema(getBookingJsonSchema))

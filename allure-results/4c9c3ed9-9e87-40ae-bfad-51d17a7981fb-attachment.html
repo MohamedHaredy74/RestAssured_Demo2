@@ -1,0 +1,28 @@
+<div>PATCH to http://localhost:3001/booking/19</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;additionalneeds&quot;: &quot;French Fries with Sausages&quot;,
+    &quot;totalprice&quot;: 476
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Cookie: token=42b05c484d08478</div>
+        <div>Accept: application/json</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X PATCH &#39;http://localhost:3001/booking/19&#39; -H &#39;Cookie: token=42b05c484d08478&#39; -H &#39;Accept: application/json&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;additionalneeds&quot;: &quot;French Fries with Sausages&quot;,
+    &quot;totalprice&quot;: 476
+}&#39;
+</div>
